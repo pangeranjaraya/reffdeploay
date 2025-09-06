@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramz_Azah</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 2rem;
+      background: linear-gradient(90deg, #0ff, #f0f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      margin: 1rem auto;
+      max-width: 800px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.3);
+    }
+    h2 {
+      color: #0ff;
+    }
+    a.button {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #0ff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    a.button:hover {
+      background: #f0f;
+      color: #fff;
+    }
+    img {
+      width: 200px;
+      border-radius: 15px;
+      margin-top: 1rem;
+    }
+    #clock {
+      font-size: 2rem;
+      margin-top: 1rem;
+      color: #0ff;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 1rem 0;
+      color: #f0f;
+    }
+  </style>
+</head>
+<body>
+    <section>
+    <img src="https://files.catbox.moe/bf5770.jpg" alt="profil ">
+    <h2>MR.RamzXploit</h2>
+    <p>Pelajar | Mahasiswa | Indonesia</p>
+  </section>
+
+  <section>
+    <h2>Tentang Saya</h2>
+    <p>Saya RamzXploit, umur saya 16 tahun,dan saya seorang pelajar di SMK YADIKA NATAR LAMPUNG SELATAN dengan passion di bidang TJKT. dan Saya BerCita" Ingin Menjadi Cyber Security yang bisa membanggakan kedua orang tua Saya. dan 
+      saya juga Suka belajar teknologi,cooding,dan berbagai pengetahuan lainnya.</p>
+     <p>بسم الله الرحمن الرحيم</p>
+      
+    <h2>Kata"buat lu</h2>
+    <blockquote>"Hidup adalah pilihan, teruslah melangkah meski jalan terasa gelap."</blockquote>
+  </section>
+  
+    <section>
+    <h2>jam</h2>
+    <div id="clock">00:00:00</div>
+    <h2></h2>
+    <audio controls>
+      <source src="https://files.catbox.moe/9uy9wn.m4a" type="audio/mpeg">
+      Browser kamu tidak mendukung audio.
+    </audio>
+  </section>
+  
+  <script>
+    function updateClock() {
+      const now = new Date();
+      let h = String(now.getHours()).padStart(2, '0');
+      let m = String(now.getMinutes()).padStart(2, '0');
+      let s = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>
